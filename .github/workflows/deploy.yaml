@@ -24,6 +24,8 @@ jobs:
         run: go test ./...
 
   compile:
+    needs: test
+    if: ${{ needs.test.result == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
