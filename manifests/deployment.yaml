@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/ioanamarag/ci_cd_lab:latest
+          image: ghcr.io/ioanamarag/ci_cd_lab@sha256:0440a0d7d00243a672a28c8d9f611fc72337dcde3edca92575a73bdcf78645b4
           ports:
             - containerPort: 8080
